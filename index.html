@@ -11,7 +11,7 @@
 </head>
 <body>
     <section class="container" id="conteudo">
-        <h1>INSCRIÇÃO</h1>
+        <h1 <output id="titulo">INSCRIÇÃO</output></h1>
 
         <form class="row g-3" name="form">
 
@@ -23,7 +23,7 @@
               
             <div class="form-group col-md-6">
                 <label for="telefone">Telefone</label>
-                <input type="number" class="form-control" id="telefone" placeholder="(xx) xxxxx-xxxx">
+                <input type="text" class="form-control" id="telefone" placeholder="(xx) xxxxx-xxxx">
               </div>
 
             <div class="form-group col-md-12">
@@ -37,20 +37,20 @@
             </div>
             
               <div class="form-group col-md-6">
-                <label for="inputEstado">Jogo</label>
-                <select id="inputEstado" class="form-control">
+                <label for="tema1">Jogo</label>
+                <select id="tema" class="form-control" onchange="trocatema()">
                   <option selected>Escolher...</option>
-                  <option value="valorant">Fifa 22</option>
-                  <option value="lol">Cod Black Ops 4</option>
-                  <option value="fifa">Free Fire</option>
+                  <option value="fifa">Fifa 22</option>
+                  <option value="cod">Cod Black Ops 4</option>
+                  <option value="ff">Free Fire</option>
                 </select>
               </div>
 
               <div class="form-group col-md-6" id="ingresso">Tipo de Ingresso
 
                   <br><div class="form-check form-check-inline">
-                    <input class="form-check-input" type="radio" onchange="ing()" name="ingre" id="espectador" value="espectador">
-                    <label class="form-check-label" for="inlineRadio1">Espectador</label>
+                    <input class="form-check-input" type="radio" onchange="ing()" name="ingre" id="espec" value="espectador2    ">
+                    <label class="form-check-label" for="espectador">Espectador</label>
                   </div>
 
                   <div class="form-check form-check-inline">

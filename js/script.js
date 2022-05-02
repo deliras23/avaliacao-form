@@ -1,9 +1,9 @@
 function ing() {
-    //entrada
-    let ingresso = document.form.ingresso.value
+    //entrada 
+    let ingresso = document.formu.ingresso.value;
 
     //processamento
-    if (ingresso == espectador) {
+    if (ingresso == espec) {
         valor = 80
     }
     
@@ -12,3 +12,21 @@ function ing() {
     //saída
     document.getElementById("total").value = valor
 } 
+
+function trocatema() {
+     //entrada
+     
+    tema = document.getElementById("tema").value;
+
+     //processamento
+    
+
+    if (tema == "fifa") {
+        
+        titulo = "Fifa 22"
+        newFundo = "img/fifa22.jpg"
+    }
+
+    //saída
+    document.getElementById("titulo").value = titulo;
+}
