@@ -1,6 +1,6 @@
 function ing() {
     //entrada 
-    let ingresso = document.formu.ingresso.value;
+    let ingresso = document.formu.ingre.value;
 
     //processamento
     if (ingresso == espec) {
@@ -29,4 +29,5 @@ function trocatema() {
 
     //saída
     document.getElementById("titulo").value = titulo;
+    document.body.style.backgroundImage = "url(" + newFundo + ")";
 }
