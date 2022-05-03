@@ -18,26 +18,26 @@
 
             <div class="form-group col-md-6">
                 <label for="nome">Nome</label>
-                <input type="text" class="form-control" id="nome" placeholder="Ex: Jorge Oliveira da Silva">
+                <input type="text" class="form-control" id="nome" placeholder="Ex: Jorge Oliveira da Silva" required>
             </div>            
               
             <div class="form-group col-md-6">
                 <label for="telefone">Telefone</label>
-                <input type="text" class="form-control" id="telefone" placeholder="(xx) xxxxx-xxxx">
+                <input type="text" class="form-control" id="telefone" placeholder="(__) _____-____" required>
               </div>
 
             <div class="form-group col-md-12">
               <label for="inputAddress">E-mail</label>
-              <input type="text" class="form-control" id="inputAddress" placeholder="jorgedasilva@gmail.com">
+              <input type="text" class="form-control" id="e-mail" placeholder="jorgedasilva@gmail.com" required>
             </div>
 
             <div class="form-group">
               <label for="inputAddress2">Endereço </label>
-              <input type="text" class="form-control" id="inputAddress2" placeholder="Apartamento, hotel, casa, etc.">
+              <input type="text" class="form-control" id="inputAddress2" placeholder="Apartamento, hotel, casa, etc." required>
             </div>
             
-              <div class="form-group col-md-6">
-                <label for="tema1">Jogo</label>
+              <div class="form-group col-md-6" required>
+                <label for="tema1" >Jogo</label>
                 <select id="tema" class="form-control" onchange="trocatema()">
                   <option selected>Escolher...</option>
                   <option value="fifa">Fifa 22</option>
@@ -46,7 +46,7 @@
                 </select>
               </div>
 
-              <div class="form-group col-md-6" id="ingresso">Tipo de Ingresso
+              <div class="form-group col-md-6" id="ingresso" required >Tipo de Ingresso
 
                   <br><div class="form-check form-check-inline">
                     <input class="form-check-input" type="radio" onchange="ing()" name="ingre" id="espectador" value="espectador">
