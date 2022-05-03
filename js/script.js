@@ -70,3 +70,18 @@ function add(valor,marcado) {
     //saída
     document.getElementById('total').value = total;
 }
+
+function mascara_telefone(obj) {
+    if (obj.value.legth == 0) {
+        obj.value += "("
+    }
+    if (obj.value.legth == 3) {
+        obj.value += ")"
+    }
+    if (obj.value.legth == 9) {
+        obj.value += "-"
+    }
+
+}
+    
+
