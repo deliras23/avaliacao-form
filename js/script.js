@@ -84,6 +84,9 @@ function mascara_telefone(obj) {
     }
 
 }
+function concluir() {
+    alert(" Sua compra foi concluída")
+}
 
     
 
