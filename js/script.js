@@ -1,7 +1,6 @@
 function ing() {
     //entrada 
-    let ingresso = document.getElementById("ingresso").value;
-    
+    let ingresso = document.form.ingresso.value;
     
     //processamento
     if (ingresso == "espectador") {
@@ -71,17 +70,20 @@ function add(valor,marcado) {
     document.getElementById('total').value = total;
 }
 
+
 function mascara_telefone(obj) {
-    if (obj.value.legth == 0) {
+    
+    if (obj.value.length == 0) {
         obj.value += "("
     }
-    if (obj.value.legth == 3) {
+    if (obj.value.length == 3) {
         obj.value += ")"
     }
-    if (obj.value.legth == 9) {
+    if (obj.value.length == 9) {
         obj.value += "-"
     }
 
 }
+
     
 
